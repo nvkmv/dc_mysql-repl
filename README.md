@@ -3,5 +3,6 @@
 change in slave.sql ip adress user and password
 
 ## Restore dump from file  ##
+docker exec -i repl_db mysql -uroot -pdb123 -e "create database ncdb"
+docker exec -i repl_db mysql -uroot -pdb123 ncdb < ncdb.sql
 
-$ docker exec -i some-mysql sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < /some/path/on/your/host/all-databases.sql
